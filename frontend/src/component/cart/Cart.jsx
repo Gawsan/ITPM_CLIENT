@@ -25,7 +25,7 @@ const Cart = ({ history }) => {
   const increaseQuantity = (id, quantity, stock) => {
     const newQty = quantity + 1;
     if (stock <= quantity) {
-      return toast.error("Product Stock Limited");
+      return toast.error("person count Limited");
     }
     dispatch(addItemsToCart(id, newQty));
   };
@@ -59,8 +59,8 @@ const Cart = ({ history }) => {
         <>
           <div className="cartPage">
             <div className="cartHeader">
-              <p>Product</p>
-              <p>Quantity</p>
+              <p>Package</p>
+              <p>person count</p>
               <p>Subtotal</p>
             </div>
 
@@ -89,9 +89,8 @@ const Cart = ({ history }) => {
                       +
                     </button>
                   </div>
-                  <p className="cartSubtotal">{`$${
-                    item.price * item.quantity
-                  }`}</p>
+                  <p className="cartSubtotal">{`$${item.price * item.quantity
+                    }`}</p>
                 </div>
               ))}
 

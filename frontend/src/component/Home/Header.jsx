@@ -26,7 +26,7 @@ const Header = () => {
         {/* Topbar Left */}
         <div className="logo pxy__10">
           <Link to="/">
-            Happy shopping
+            SIG Trip Advisor
 
           </Link>
         </div>
@@ -73,10 +73,10 @@ const Header = () => {
               <li>About</li>
             </Link>
             <Link to="/Products">
-              <li>Products</li>
+              <li>Packages</li>
             </Link>
             <Link to="/creator">
-              <li>Become A Seller</li>
+              <li>Blog</li>
             </Link>
 
           </ul>

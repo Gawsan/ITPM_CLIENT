@@ -38,13 +38,13 @@ const Shipping = ({ history }) => {
 
   return (
     <>
-      <MetaData title="Shipping Details" />
+      <MetaData title="Customer Details" />
 
       <CheckoutSteps activeStep={0} />
 
       <div className="shippingContainer">
         <div className="shippingBox">
-          <h2 className="shippingHeading">Shipping Details</h2>
+          <h2 className="shippingHeading">Customer Details</h2>
 
           <form
             className="shippingForm"

@@ -29,12 +29,11 @@ const CreateProduct = ({ history }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Personal",
-    "cloth",
-    "Ladies Cloth",
-    "Gift",
-    "Food",
-    "Electronics",
+    "COUPLE PACKAGE",
+    "Adventure Package",
+    "View Points",
+    "Honey Moon",
+    "Visits Package",
     "Sports",
     "Others"
   ];
@@ -106,13 +105,13 @@ const CreateProduct = ({ history }) => {
               <SpellcheckIcon />
               <input
                 type="text"
-                placeholder="Product Name"
+                placeholder="Package Name"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
-            
+
             <div>
               <DiscountIcon />
               <input
@@ -126,7 +125,7 @@ const CreateProduct = ({ history }) => {
               <AttachMoneyIcon />
               <input
                 type="number"
-                placeholder="Product Price"
+                placeholder="Package Price"
                 required
                 onChange={(e) => setPrice(e.target.value)}
               />
@@ -135,7 +134,7 @@ const CreateProduct = ({ history }) => {
             <div>
               <DescriptionIcon />
               <textarea
-                placeholder="Product Description"
+                placeholder="Package Description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 cols="30"
@@ -159,7 +158,7 @@ const CreateProduct = ({ history }) => {
               <StorageIcon />
               <input
                 type="number"
-                placeholder="Stock"
+                placeholder="Available Slot"
                 required
                 onChange={(e) => setStock(e.target.value)}
               />
@@ -191,7 +190,7 @@ const CreateProduct = ({ history }) => {
           </form>
         </div>
       </div>
-      <ToastContainer 
+      <ToastContainer
         position="bottom-center"
         autoClose={5000}
         hideProgressBar={false}
@@ -201,7 +200,7 @@ const CreateProduct = ({ history }) => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        />
+      />
     </Fragment>
   );
 };

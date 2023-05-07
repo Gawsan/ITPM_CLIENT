@@ -18,7 +18,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <Link to="/">
-        Happy Shopping
+        Tourism Admin
       </Link>
       <Link to="/dashboard">
         <p className="Dashboard__item" onClick={button}>
@@ -27,21 +27,21 @@ const Sidebar = () => {
       </Link>
       <Link to="/admin/products">
         <p className="Dashboard__item">
-          <PostAddIcon /> All Products
+          <PostAddIcon /> All Packages
         </p>
       </Link>
 
       <Link to="/admin/product">
         <p>
           <AddIcon />
-          Create Product
+          Create Package
         </p>
       </Link>
 
       <Link to="/admin/orders">
         <p>
           <ListAltIcon />
-          Orders
+          Packages
         </p>
       </Link>
       <Link to="/admin/users">

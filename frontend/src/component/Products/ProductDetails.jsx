@@ -140,7 +140,7 @@ const ProductDetails = ({ match, history }) => {
                   </h1>
                 </div>
                 <div className="detailsBlock-3-1">
-                  <span className="quantity">Quantity</span>
+                  <span className="quantity">person count</span>
                   <div className="detailsBlock-3-1-1">
                     <button onClick={decreaseQuantity}>-</button>
                     <input type="number" readOnly value={quantity} />
@@ -149,7 +149,7 @@ const ProductDetails = ({ match, history }) => {
                 </div>
                 <p className="stock__meta" style={{ paddingBottom: ".5vmax" }}>
                   <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
-                    {product.Stock < 1 ? "OutOfStock" : "InStock"}
+                    {product.Stock < 1 ? "NotAvailable" : "Available"}
                   </b>
                 </p>
                 <div

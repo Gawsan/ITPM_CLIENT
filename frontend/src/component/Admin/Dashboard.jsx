@@ -56,7 +56,7 @@ const Dashboard = () => {
   };
 
   const doughnutState = {
-    labels: ["Out of Stock", "InStock"],
+    labels: ["Not Available", "InStocAvilablek"],
     datasets: [
       {
         backgroundColor: ["#00A6B4", "#6800B4"],
@@ -83,7 +83,7 @@ const Dashboard = () => {
             <div className="featured">
               <div className="featuredItem">
                 <a href="/admin/products">
-                  <span className="featuredTitle">Products</span>
+                  <span className="featuredTitle">Packages</span>
                 </a>
                 <div className="featuredSalesContainer">
                   <span className="faeaturedMoney">

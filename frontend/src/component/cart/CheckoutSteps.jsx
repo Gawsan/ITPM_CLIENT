@@ -9,11 +9,11 @@ import BottomTab from "../../more/BottomTab";
 const CheckoutSteps = ({ activeStep }) => {
   const steps = [
     {
-      label: <Typography>Shipping Details</Typography>,
+      label: <Typography>Customer Details</Typography>,
       icon: <LocalShippingIcon />,
     },
     {
-      label: <Typography>Confirm Order</Typography>,
+      label: <Typography>Confirm Package</Typography>,
       icon: <LibraryAddCheckIcon />,
     },
     {

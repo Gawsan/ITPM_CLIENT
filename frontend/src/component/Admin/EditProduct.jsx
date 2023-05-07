@@ -9,7 +9,7 @@ import DescriptionIcon from "@material-ui/icons/Description";
 import StorageIcon from "@material-ui/icons/Storage";
 import SpellcheckIcon from "@material-ui/icons/Spellcheck";
 import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
-    // eslint-disable-next-line
+// eslint-disable-next-line
 import DiscountIcon from "@material-ui/icons/LocalOffer";
 import SideBar from "./Sidebar";
 import { UPDATE_PRODUCT_RESET } from "../../constans/ProductConstans";
@@ -29,7 +29,7 @@ const UpdateProduct = ({ history, match }) => {
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
-      // eslint-disable-next-line
+  // eslint-disable-next-line
   const [offerPrice, setOfferPrice] = useState("");
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
@@ -39,12 +39,11 @@ const UpdateProduct = ({ history, match }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Personal",
-    "cloth",
-    "Ladies Cloth",
-    "Shoes",
-    "Food",
-    "Electronics",
+    "COUPLE PACKAGE",
+    "Adventure Package",
+    "View Points",
+    "Honey Moon",
+    "Visits Package",
     "Sports",
     "Others"
   ];
@@ -88,7 +87,7 @@ const UpdateProduct = ({ history, match }) => {
     updateError,
   ]);
 
-  const updateProductSubmitHandler  = (e) => {
+  const updateProductSubmitHandler = (e) => {
     e.preventDefault();
 
     const myForm = new FormData();
@@ -145,7 +144,7 @@ const UpdateProduct = ({ history, match }) => {
               <SpellcheckIcon />
               <input
                 type="text"
-                placeholder="Product Name"
+                placeholder="Package Name"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -163,7 +162,7 @@ const UpdateProduct = ({ history, match }) => {
               <AttachMoneyIcon />
               <input
                 type="number"
-                placeholder="Product Price"
+                placeholder="Package Price"
                 required
                 onChange={(e) => setPrice(e.target.value)}
                 value={price}
@@ -174,7 +173,7 @@ const UpdateProduct = ({ history, match }) => {
               <DescriptionIcon />
 
               <textarea
-                placeholder="Product Description"
+                placeholder="Package Description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
                 cols="30"
@@ -201,7 +200,7 @@ const UpdateProduct = ({ history, match }) => {
               <StorageIcon />
               <input
                 type="number"
-                placeholder="Stock"
+                placeholder="Available Slot"
                 required
                 onChange={(e) => setStock(e.target.value)}
                 value={Stock}
@@ -241,7 +240,7 @@ const UpdateProduct = ({ history, match }) => {
           </form>
         </div>
       </div>
-      <ToastContainer 
+      <ToastContainer
         position="bottom-center"
         autoClose={5000}
         hideProgressBar={false}
@@ -251,7 +250,7 @@ const UpdateProduct = ({ history, match }) => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        />
+      />
     </Fragment>
   );
 };
